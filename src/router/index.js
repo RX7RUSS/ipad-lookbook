@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/components/Home'
 import About from '@/components/About'
 import Coins from '@/components/Coins'
+import Categories from '@/components/Categories'
 
 Vue.use(Router)
 
@@ -10,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
     },
     {
       path: '/about',
@@ -22,6 +23,11 @@ export default new Router({
       path: '/coins/:id',
       name: 'Coins',
       component: Coins
+    },
+    {
+      path: '/categories',
+      name: 'Categories',
+      component: Categories
     }
   ]
 })

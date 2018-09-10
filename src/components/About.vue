@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <h1>What is Crypto-Currency?</h1>
+    <h1>Crypto Test Data</h1>
     <p>
-      It's a digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank.
+      I wanted to import some actual data to learn dynamic routing. Click on the name below to see details about that coin.
     </p>
   </div>
 </template>

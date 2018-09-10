@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-link :to="{ name: 'HelloWorld' }">Home</router-link>
+<!--     <router-link :to="{ name: 'Home' }">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/coins/ethereum">Ethereum</router-link>
     <router-link to="/coins/bitcoin">Bitcoin</router-link>
+    <router-link to="/coins/ripple">Ripple</router-link>
+    <router-link to="/coins/tron">Tron</router-link> -->
+    <router-link to="/categories">Categories</router-link>
     <router-view></router-view>
+    <img src="./assets/th-logo.png">
   </div>
 </template>
 
@@ -27,7 +30,8 @@ export default {
   margin-top: 60px;
 }
 img {
-  width: 200px;
   margin: 0 auto;
+  padding-top: 25px;
+  width: 200px;
 }
 </style>
