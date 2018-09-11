@@ -3,10 +3,9 @@
     <h1>Explore all TreeHouse can do for you!</h1>
     <div class="category-wrap">
       <div class="category" v-for="(category, index) in categories" :key="index">
-        <span>{{category.title}}</span><br>
-        <span>{{category.description}}</span><br>
         <img class="primary-img" :src="category.pic" /><br>
-        <span>{{category.galleryStyles[0].title}}</span>
+         <span>{{category.title}}</span>
+<!--         <span>{{category.galleryStyles[0].title}}</span> -->
       </div>
     </div>
   </div>
@@ -22,7 +21,7 @@ export default {
         {
           title: 'Bath',
           description: 'test description',
-          pic: require('../assets/Icon_Bath.png'),
+          pic: require('../assets/Icon_Bath.svg'),
           galleryStyles: [
             {
               title: 'Modern Bath',
@@ -44,7 +43,7 @@ export default {
         {
           title: 'Kitchen',
           description: 'test description 2',
-          pic: require('../assets/Icon_Kitchen.png'),
+          pic: require('../assets/Icon_Kitchen.svg'),
           galleryStyles: [
             {
               title: 'Modern Kitchen',
@@ -87,12 +86,15 @@ export default {
 }
 .category {
   margin: 50px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
 }
 .thumb {
   width: 45px;
 }
 .primary-img {
-  width: 100%;
+  
 }
 
 </style>
